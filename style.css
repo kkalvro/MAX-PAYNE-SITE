@@ -1,0 +1,31 @@
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    color: #fff5f5;
+    margin: 20px;
+  }
+
+  header {
+    
+    margin: 20px;
+  }
+
+  li {
+    float: right;
+  }
+  
+  a {
+    display:inline;
+    padding: 8px;
+   
+  }
+  
+  h1 {
+    color: rgb(209, 43, 43);
+    text-align: left;
+  }
+  
+  p {
+    font-size: px;
+    line-height: 1.5;
+  }

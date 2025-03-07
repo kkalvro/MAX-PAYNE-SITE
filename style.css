@@ -1,35 +1,43 @@
 body {
   background-color: #000000;
-  font-family: Arial, sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: #ffffff;
   margin: 25px 50px 75px 100px;
 
 }
 
-header {
-  h1 {
-    color: #ff0000;
-    text-align: left;
-    justify-content: center;
-    display: inline;
-    margin: 20px;
-    font-size: 60px;
-
-  }
+header h1 {
+  background-color: #000000;
+  color: #ff0000;
+  text-align: center;
+  margin: 20px;
+  font-size: 60px;
 }
 
-nav {
-  ul {
-    justify-content: end;
-    color: #000000;
-    text-decoration: none;
-    display: inline ;
-    
-  }
+header h2 {
+  text-align: center;
+  
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+  text-indent:20px
 
 }
+header ul {
+  list-style-type: none;
+  overflow: hidden;
+  display:flex;
+}
 
-h2 {
+a:link {
+  color: rgba(250, 250, 250, 0);
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+
+main h2 {
   color: rgb(255, 0, 0);
   text-align: center;
   display: block;

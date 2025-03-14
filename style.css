@@ -118,12 +118,31 @@ footer {
   gap: 200px;
   margin-bottom: 0px;
   margin-top: 80px;
-
 }
 
 .sobre1 p {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.jogabilidade1 h2 {
+  text-align: left;
   gap: 200px;
   margin-bottom: 0px;
   margin-top: 80px;
+}
+
+.jogabilidade1 {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 30px;
   text-align: justify;
 }
+
+h3 {
+  font-size: 30px;
+  color: #ff5757;
+}
+

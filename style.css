@@ -7,10 +7,12 @@ body {
 }
 
 .nav-list {
+  
   display: flex;
   flex-direction: row;
   list-style-type: none;
   justify-content: end;
+  
 }
 
 header h1 {

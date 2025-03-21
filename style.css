@@ -6,6 +6,10 @@ body {
 
 }
 
+span {
+  text-transform: uppercase;
+}
+
 .nav-list {
   
   display: flex;
@@ -28,7 +32,7 @@ header h2 {
   font-family: "Courier New" monospace;
   text-decoration: none;
   color: #ff5757;
-  text-indent: 20px
+  text-indent: 40px
 }
 
 a:link {

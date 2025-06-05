@@ -11,40 +11,48 @@
 <body>
     <header>
         <nav>
-        <div class="nav-list">
-            <div style="flex-grow: 8"><a href="index.html">
-                    <h1>Central Max Payne</h1>
-                </a> </div>
+            <div class="nav-list">
+                <div style="flex-grow: 8"><a href="index.html">
+                        <h1>Central Max Payne</h1>
+                    </a> </div>
 
-            <nav>
+                <nav>
 
-                <ul>
-                    <div class="maxpaynenav">
-                        <div>
-                            <li><a href="#sobre1">
-                                    <h2><span>Sobre o jogo</span></h2>
-                                </a></li>
-                        </div>
-                        <div>
-                            <li><a href="#jogabilidade1">
-                                    <h2><span>Jogabilidade</span></h2>
-                                </a></li>
-                        </div>
-                        <div>
-                            <li><a href="#lançamento1">
-                                    <h2><span>Lançamento no Brasil</span></h2>
-                                </a></li>
-                        </div>
-                        <div>
-                            <li><a href="#personagens1">
-                                    <h2><span>Personagens</span></h2>
-                                </a></li>
-                        </div>
+                    <ul>
+                        <div class="maxpaynenav">
+                            <div>
+                                <li><a href="#sobre1">
+                                        <h2>Sobre o jogo</h2>
+                                    </a></li>
+                            </div>
+                            <div>
+                                <li><a href="#jogabilidade1">
+                                        <h2>Jogabilidade</h2>
+                                    </a></li>
+                            </div>
+                            <div>
+                                <li><a href="#lançamento1">
+                                        <h2>Lançamento no Brasil</h2>
+                                    </a></li>
+                            </div>
+                            <div>
+                                <li><a href="#personagens1">
+                                        <h2>Personagens</h2>
+                                    </a></li>
+                            </div>
 
 
-                </ul>
-        </div>
+                    </ul>
+            </div>
         </nav>
+        <div class="lang-switch">
+            <button onclick="setLanguage('pt')">PT</button>
+            <button onclick="setLanguage('en')">EN</button>
+            <button onclick="setLanguage('es')">ES</button>
+            <button id="themeToggle" onclick="toggleTheme()">🌙/☀️</button>
+        </div>
+
+
     </header>
     <main>
 
@@ -67,24 +75,15 @@
             <section id="sobre1">
                 <article>
                     <div>
-                        <h2>Sobre o jogo</h2>
+                        <h2 class="lang" data-pt="Sobre o jogo" data-en="About the game" data-es="Sobre el juego">
+                        </h2>
                     </div>
                     <div>
-                        <p>O jogo centra-se no antigo detetive de Nova York Max Payne, que tenta resolver o
-                            assassinato de sua família enquanto investiga uma nova droga misteriosa chamada
-                            "Valkyria". Ao fazer isso, Max se envolve em uma grande e complexa conspiração envolvendo
-                            uma
-                            grande empresa farmacêutica e o crime organizado, a sociedade secreta, e os militares dos
-                            EUA. O
-                            jogo apresenta um corajoso neo-noir estilo e usos história em quadrinhos painéis com
-                            locuções
-                            como principal meio de contar histórias, inspirando-se em romances policiais de autores como
-                            Mickey Spillane. Ele contém muitas alusões a Mitologia nórdica, particularmente o mito de
-                            Ragnarök e vários nomes. A jogabilidade é fortemente influenciada pelo gênero de cinema de
-                            ação
-                            de Hong
-                            Kong, principalmente obra do diretor John Woo, e foi um dos primeiros jogos a
-                            apresentar o efeito "bullet time" popularizado pelo filme "Matrix".</p>
+                        <p class="lang"
+                            data-pt="O jogo centra-se no antigo detetive de Nova York Max Payne, que tenta resolver o assassinato de sua família enquanto investiga uma nova droga misteriosa chamada 'Valkyria'. Ao fazer isso, Max se envolve em uma grande e complexa conspiração envolvendo uma grande empresa farmacêutica e o crime organizado, a sociedade secreta, e os militares dos EUA. O jogo apresenta um corajoso neo-noir estilo e usos história em quadrinhos painéis com locuções como principal meio de contar histórias, inspirando-se em romances policiais de autores como Mickey Spillane. Ele contém muitas alusões a Mitologia nórdica, particularmente o mito de Ragnarök e vários nomes. A jogabilidade é fortemente influenciada pelo gênero de cinema de ação de Hong Kong, principalmente obra do diretor John Woo, e foi um dos primeiros jogos a apresentar o efeito 'bullet time' popularizado pelo filme 'Matrix'."
+                            data-en="The game centers on former New York detective Max Payne, who tries to solve the murder of his family while investigating a mysterious new drug called 'Valkyr'. In doing so, Max becomes involved in a large and complex conspiracy involving a major pharmaceutical company, organized crime, a secret society, and the US military. The game features a bold neo-noir style and uses comic book panels with voice-overs as the main storytelling device, drawing inspiration from crime novels by authors like Mickey Spillane. It contains many allusions to Norse mythology, particularly the myth of Ragnarök and various names. The gameplay is heavily influenced by the Hong Kong action film genre, especially the work of director John Woo, and was one of the first games to feature the 'bullet time' effect popularized by the movie 'The Matrix'."
+                            data-es="El juego se centra en el ex detective de Nueva York Max Payne, que intenta resolver el asesinato de su familia mientras investiga una nueva droga misteriosa llamada 'Valkyria'. Al hacerlo, Max se ve envuelto en una gran y compleja conspiración que involucra a una importante empresa farmacéutica, el crimen organizado, una sociedad secreta y los militares de EE. UU. El juego presenta un audaz estilo neo-noir y utiliza paneles de cómic con narraciones como principal medio para contar la historia, inspirándose en novelas policiales de autores como Mickey Spillane. Contiene muchas alusiones a la mitología nórdica, en particular al mito de Ragnarök y varios nombres. La jugabilidad está fuertemente influenciada por el género de cine de acción de Hong Kong, especialmente la obra del director John Woo, y fue uno de los primeros juegos en presentar el efecto 'bullet time' popularizado por la película 'Matrix'.">
+                        </p>
                     </div>
         </div>
         </article>
@@ -94,56 +93,63 @@
             <section id="jogabilidade1">
                 <article>
                     <div>
-                        <h2>Jogabilidade</h2>
+                        <h2 class="lang" data-pt="Jogabilidade" data-en="Gameplay" data-es="Jugabilidad">
+                        </h2>
                     </div>
                     <div>
-                        <p>Max Payne é um jogo de tiro em terceira pessoa no qual o jogador assume o papel do
-                            personagem-título, Max Payne. Quase toda a jogabilidade envolve a utilização do "bullet
-                            time" para balear inimigo após inimigo. Os níveis são geralmente lineares e simples, com
-                            quase nenhuma caça às chaves; no entanto, alguns níveis incorporam elementos de plataforma e
-                            quebra-cabeças. No entanto, a ênfase principal do jogo está no tiroteio.</p>
+                        <p class="lang"
+                            data-pt="Max Payne é um jogo de tiro em terceira pessoa no qual o jogador assume o papel do personagem-título, Max Payne. Quase toda a jogabilidade envolve a utilização do 'bullet time' para balear inimigo após inimigo. Os níveis são geralmente lineares e simples, com quase nenhuma caça às chaves; no entanto, alguns níveis incorporam elementos de plataforma e quebra-cabeças. No entanto, a ênfase principal do jogo está no tiroteio."
+                            data-en="Max Payne is a third-person shooter in which the player takes on the role of the title character, Max Payne. Almost all gameplay involves using 'bullet time' to shoot enemy after enemy. Levels are generally linear and simple, with almost no key hunting; however, some levels incorporate platforming and puzzle elements. Still, the main emphasis of the game is on shooting."
+                            data-es="Max Payne es un juego de disparos en tercera persona en el que el jugador asume el papel del personaje principal, Max Payne. Casi toda la jugabilidad implica el uso del 'bullet time' para disparar a enemigo tras enemigo. Los niveles suelen ser lineales y sencillos, con casi ninguna búsqueda de llaves; sin embargo, algunos niveles incorporan elementos de plataformas y rompecabezas. Sin embargo, el énfasis principal del juego está en los tiroteos.">
+                        </p>
 
-                        <p>Depois de uma batalha, cartuchos de bala se espalham pelo chão e as paredes ficam cheias de
-                            buracos de balas. Em um hotel decadente, você pode ligar uma cama vibratória, puxar o
-                            autoclismo ou ligar a televisão para checar o noticiário mais recente. O jogo mantém você na
-                            borda, enquanto você atenta para bandidos à espreita ou portas armadilhadas.</p>
+                        <p class="lang"
+                            data-pt="Depois de uma batalha, cartuchos de bala se espalham pelo chão e as paredes ficam cheias de buracos de balas. Em um hotel decadente, você pode ligar uma cama vibratória, puxar o autoclismo ou ligar a televisão para checar o noticiário mais recente. O jogo mantém você na borda, enquanto você atenta para bandidos à espreita ou portas armadilhadas."
+                            data-en="After a battle, bullet casings are scattered on the floor and the walls are riddled with bullet holes. In a run-down hotel, you can turn on a vibrating bed, flush the toilet, or turn on the TV to check the latest news. The game keeps you on edge as you watch out for lurking thugs or trapped doors."
+                            data-es="Después de una batalla, los cartuchos de bala se esparcen por el suelo y las paredes quedan llenas de agujeros de bala. En un hotel decadente, puedes encender una cama vibradora, tirar de la cadena del inodoro o encender la televisión para ver las últimas noticias. El juego te mantiene en tensión mientras vigilas a los bandidos al acecho o las puertas con trampas.">
+                        </p>
                     </div>
                     <div>
-                        <h3>Armas</h3>
-                    </div>
-                    <div>
-                        <p>Inicialmente, a única arma que o jogador possui é uma pistola de 9 milímetros; à medida que o
-                            jogador progride, vai tendo acesso a outras armas, incluindo pistolas (Bereta 92 e uma
-                            Desert Eagle), espingardas (espingardas de bomba de ação e de cano serrado e uma Pancor
-                            Jackhammer automática), submetralhadoras (Ingram e Colt Commando), um lançador de granadas
-                            M79, um rifle de precisão, e armas de ataque corporal e jogáveis (algumas destas armas podem
-                            ser usadas em dobro, sendo usada uma arma em cada mão). Max recupera a saúde tomando
-                            analgésicos, que o jogador coleta durante o game.</p>
-                    </div>
-                    <div>
-                        <h3>A Inteligência Artificial</h3>
-                    </div>
-                    <div>
-                        <p>A inteligência artificial do jogo é totalmente dependente de comandos pré-escritos: a maior
-                            parte do comportamento aparentemente inteligente exibido pelos inimigos (como lançar
-                            granadas, se esconder atrás de caixas e fugir do jogador), na verdade, é pré-escrito. Assim
-                            quando um nível é repetido, os inimigos fazem os movimentos iniciais exatamente iguais aos
-                            que fizeram da primeira vez.</p>
-                    </div>
-                    <div>
-                        <h3>Bullet Time</h3>
-                    </div>
-                    <div>
-                        <p>A jogabilidade de Max Payne gira em torno do "Bullet Time", que quando acionado, a passagem
-                            do tempo é retardada a tal ponto que os movimentos das balas podem ser vistos a olho nu -
-                            uma forma de câmera lenta - e permite a Max executar movimentos especiais. Embora Payne
-                            também seja desacelerado, o jogador ainda pode mirar em tempo real, tirando uma grande
-                            vantagem dos inimigos.</p>
+                        <h3 class="lang" data-pt="Armas" data-en="Weapons" data-es="Armas">
 
-                        <p>Ocasionalmente, quando o último personagem de um grupo de inimigos é morto, o ponto de vista
-                            muda para uma visão de terceira pessoa giratória em câmera lenta do corpo do inimigo caindo;
-                            do mesmo modo, a câmera segue uma bala disparada com precisão pelo jogador (mais comum com o
-                            rifle de precisão).</p>
+                        </h3>
+                    </div>
+                    <div>
+                        <p class="lang"
+                            data-pt="Inicialmente, a única arma que o jogador possui é uma pistola de 9 milímetros; à medida que o jogador progride, vai tendo acesso a outras armas, incluindo pistolas (Bereta 92 e uma Desert Eagle), espingardas (espingardas de bomba de ação e de cano serrado e uma Pancor Jackhammer automática), submetralhadoras (Ingram e Colt Commando), um lançador de granadas M79, um rifle de precisão, e armas de ataque corporal e jogáveis (algumas destas armas podem ser usadas em dobro, sendo usada uma arma em cada mão). Max recupera a saúde tomando analgésicos, que o jogador coleta durante o game."
+                            data-en="Initially, the only weapon the player has is a 9mm pistol; as the player progresses, they gain access to other weapons, including pistols (Beretta 92 and a Desert Eagle), shotguns (pump-action and sawed-off shotguns and a Pancor Jackhammer automatic), submachine guns (Ingram and Colt Commando), an M79 grenade launcher, a sniper rifle, and melee and throwable weapons (some of these weapons can be dual-wielded, with one weapon in each hand). Max restores health by taking painkillers, which the player collects throughout the game."
+                            data-es="Inicialmente, el único arma que el jugador posee es una pistola de 9 milímetros; a medida que avanza, obtiene acceso a otras armas, incluidas pistolas (Beretta 92 y una Desert Eagle), escopetas (de bombeo, recortadas y una Pancor Jackhammer automática), subfusiles (Ingram y Colt Commando), un lanzagranadas M79, un rifle de francotirador y armas cuerpo a cuerpo y arrojadizas (algunas de estas armas pueden usarse en ambas manos, una en cada mano). Max recupera la salud tomando analgésicos, que el jugador recoge durante el juego.">
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="lang" data-pt="A Inteligência Artificial" data-en="Artificial Intelligence"
+                            data-es="La Inteligencia Artificial">
+                        </h3>
+                    </div>
+                    <div>
+                        <p class="lang"
+                            data-pt="A inteligência artificial do jogo é totalmente dependente de comandos pré-escritos: a maior parte do comportamento aparentemente inteligente exibido pelos inimigos (como lançar granadas, se esconder atrás de caixas e fugir do jogador), na verdade, é pré-escrito. Assim quando um nível é repetido, os inimigos fazem os movimentos iniciais exatamente iguais aos que fizeram da primeira vez."
+                            data-en="The game's artificial intelligence is entirely dependent on pre-scripted commands: most of the seemingly intelligent behavior displayed by enemies (such as throwing grenades, hiding behind boxes, and fleeing from the player) is actually pre-scripted. So when a level is replayed, enemies make the exact same initial moves as they did the first time."
+                            data-es="La inteligencia artificial del juego depende totalmente de comandos preescritos: la mayor parte del comportamiento aparentemente inteligente que muestran los enemigos (como lanzar granadas, esconderse detrás de cajas y huir del jugador) en realidad está preescrito. Así, cuando se repite un nivel, los enemigos hacen exactamente los mismos movimientos iniciales que hicieron la primera vez.">
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="lang" data-pt="Bullet Time" data-en="Bullet Time" data-es="Bullet Time">
+                            Bullet Time
+                        </h3>
+                    </div>
+                    <div>
+                        <p class="lang"
+                            data-pt='A jogabilidade de Max Payne gira em torno do "Bullet Time", que quando acionado, a passagem do tempo é retardada a tal ponto que os movimentos das balas podem ser vistos a olho nu - uma forma de câmera lenta - e permite a Max executar movimentos especiais. Embora Payne também seja desacelerado, o jogador ainda pode mirar em tempo real, tirando uma grande vantagem dos inimigos.'
+                            data-en='Max Payne’s gameplay revolves around "Bullet Time", which, when activated, slows down time to the point where bullets can be seen with the naked eye—a kind of slow motion—and allows Max to perform special moves. Although Payne is also slowed down, the player can still aim in real time, giving a big advantage over enemies.'
+                            data-es='La jugabilidad de Max Payne gira en torno al "Bullet Time", que cuando se activa, el paso del tiempo se ralentiza tanto que los movimientos de las balas pueden verse a simple vista, una especie de cámara lenta, y permite a Max ejecutar movimientos especiales. Aunque Payne también se ralentiza, el jugador aún puede apuntar en tiempo real, obteniendo una gran ventaja sobre los enemigos.'>
+                        </p>
+
+                        <p class="lang"
+                            data-pt="Ocasionalmente, quando o último personagem de um grupo de inimigos é morto, o ponto de vista muda para uma visão de terceira pessoa giratória em câmera lenta do corpo do inimigo caindo; do mesmo modo, a câmera segue uma bala disparada com precisão pelo jogador (mais comum com o rifle de precisão)."
+                            data-en="Occasionally, when the last character in a group of enemies is killed, the point of view shifts to a rotating third-person slow-motion view of the enemy’s body falling; likewise, the camera follows a bullet precisely fired by the player (most commonly with the sniper rifle)."
+                            data-es="Ocasionalmente, cuando el último personaje de un grupo de enemigos es eliminado, el punto de vista cambia a una vista en tercera persona giratoria en cámara lenta del cuerpo del enemigo cayendo; de igual modo, la cámara sigue una bala disparada con precisión por el jugador (más común con el rifle de francotirador).">
+                        </p>
                     </div>
                 </article>
             </section>
@@ -152,101 +158,47 @@
             <section id="lançamento1">
                 <article>
                     <div>
-                        <h2>Lançamento no Brasil</h2>
+                        <h2 class="lang" data-pt="Lançamento no Brasil" data-en="Release in Brazil"
+                            data-es="Lanzamiento en Brasil">
+                            Lançamento no Brasil
+                        </h2>
                     </div>
                     <div>
-                        <p>No Brasil, Max Payne estava previsto originalmente para ser lançado pela Electronic Arts
-                            Brasil, porém após ser firmado o contrato entre 3D Realms e Remedy com a Gathering of
-                            Developers, teve sua versão para Microsoft Windows lançada pela Greenleaf em 2001, a partir
-                            da parceria desta com a distribuidora estado-unidense. Como política empresarial da
-                            Greenleaf, o jogo foi traduzido e dublado em português brasileiro, com dublagem realizada
-                            durante meses em São Paulo, tendo Mauro Castro no papel principal. O lançamento,
-                            prometido para setembro de 2001, saiu somente em dezembro devido a atrasos na
-                            tradução. Reinaldo Normand do Outer Space criticou a dublagem como "não é lá essas
-                            coisas, ficando com um aspecto de filme de ação de sessão da tarde", porém elogiou a atuação
-                            de Mauro Castro e, mesmo com as críticas, apontou a dublagem com um dos pontos positivos do
-                            jogo. Max Payne é classificado como não recomendado para menores de 18 anos segundo o
-                            Departamento de Justiça, Classificação, Títulos e Qualificação.</p>
+                        <p class="lang"
+                            data-pt="No Brasil, Max Payne estava previsto originalmente para ser lançado pela Electronic Arts Brasil, porém após ser firmado o contrato entre 3D Realms e Remedy com a Gathering of Developers, teve sua versão para Microsoft Windows lançada pela Greenleaf em 2001, a partir da parceria desta com a distribuidora estado-unidense. Como política empresarial da Greenleaf, o jogo foi traduzido e dublado em português brasileiro, com dublagem realizada durante meses em São Paulo, tendo Mauro Castro no papel principal. O lançamento, prometido para setembro de 2001, saiu somente em dezembro devido a atrasos na tradução. Reinaldo Normand do Outer Space criticou a dublagem como 'não é lá essas coisas, ficando com um aspecto de filme de ação de sessão da tarde', porém elogiou a atuação de Mauro Castro e, mesmo com as críticas, apontou a dublagem com um dos pontos positivos do jogo. Max Payne é classificado como não recomendado para menores de 18 anos segundo o Departamento de Justiça, Classificação, Títulos e Qualificação."
+                            data-en="In Brazil, Max Payne was originally scheduled to be released by Electronic Arts Brazil, but after the contract between 3D Realms and Remedy with Gathering of Developers was signed, its Microsoft Windows version was released by Greenleaf in 2001, through a partnership with the American distributor. As a business policy, Greenleaf translated and dubbed the game into Brazilian Portuguese, with dubbing carried out over several months in São Paulo, featuring Mauro Castro in the lead role. The release, promised for September 2001, only came out in December due to delays in translation. Reinaldo Normand from Outer Space criticized the dubbing as 'not that great, sounding like an afternoon action movie,' but praised Mauro Castro's performance and, despite the criticism, pointed out the dubbing as one of the game's positive points. Max Payne is rated as not recommended for those under 18 according to the Department of Justice, Classification, Titles, and Qualification."
+                            data-es="En Brasil, Max Payne estaba originalmente previsto para ser lanzado por Electronic Arts Brasil, pero tras firmarse el contrato entre 3D Realms y Remedy con Gathering of Developers, su versión para Microsoft Windows fue lanzada por Greenleaf en 2001, a partir de la asociación con la distribuidora estadounidense. Como política empresarial, Greenleaf tradujo y dobló el juego al portugués brasileño, con el doblaje realizado durante meses en São Paulo, teniendo a Mauro Castro en el papel principal. El lanzamiento, prometido para septiembre de 2001, salió solo en diciembre debido a retrasos en la traducción. Reinaldo Normand de Outer Space criticó el doblaje como 'no es gran cosa, pareciendo una película de acción de la tarde', pero elogió la actuación de Mauro Castro y, a pesar de las críticas, señaló el doblaje como uno de los puntos positivos del juego. Max Payne está clasificado como no recomendado para menores de 18 años según el Departamento de Justicia, Clasificación, Títulos y Calificación.">
+                        </p>
                     </div>
                 </article>
             </section>
         </div>
-        <div class="personagens">
+        <div class="personagens-carousel">
             <section id="personagens1">
-                <article>
-                    <h2>Personagens</h2>
-                    <h3>Max Payne</h3>
-                    <img width=360 height="360"
-                        src="https://preview.redd.it/a9k6070ie0s81.jpg?auto=webp&s=c8e03289eb58ab18e305b51243131c890e5c93c3">
-                    <p>Max Payne é o protagonista titular da série de videogames de mesmo nome . Ele também é
-                        referenciado em Alan Wake e na série Grand Theft Auto . Max Payne foi dublado em todas as três
-                        partes do jogo por James McCaffrey .</p>
-                    <p>Max era um ex detetive de Nova York e policial disfarçado antes de deixar seu trabalho policial
-                        em 2003. </p>
-                    <p>Payne costumava viver uma vida familiar feliz, mas a tragédia aconteceu quando sua esposa e filha
-                        pequena foram assassinadas por 3 lunáticos que foram injetados com Valkyr . Isso colocou Payne
-                        em um caminho de depressão e vingança, e ele se tornou um policial disfarçado na Família do
-                        Crime Punchinello que era suspeito de ter um papel no tráfico da droga Valkyr. Ele é forçado a
-                        se tornar um fugitivo após ser incriminado pelo assassinato de seu parceiro, Alex Balder . Para
-                        piorar as coisas, os Punchinellos sabiam que Max é um policial e tentaram matá-lo.</p>
-
-                    <h3>Mona Sax</h3>
-                    <img width=360 height="360"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQwcD3CB-2zHC4QaI-jha3lg29PfjJ_jOh4Q&s">
-                    <p>Mona Sax é uma personagem importante no jogo Max Payne 1. Ela é uma mulher
-                        misteriosa e habilidosa, envolvida no mundo do crime. Mona é descrita como uma assassina
-                        profissional, que tem uma relação complicada com Max Payne, o protagonista do jogo. Embora
-                        inicialmente pareça ser uma inimiga, ao longo da história ela revela um caráter mais complexo e
-                        uma conexão com Max, especialmente por causa de seus laços com a trama de vingança e corrupção
-                        que envolve o tráfico de drogas e a morte da esposa de Max, Michelle.</p>
-                    <p>Mona tem uma personalidade intrigante, combinando força, inteligência e uma postura
-                        independente. Sua relação com Max é marcada por momentos de tensão e colaboração, o que adiciona
-                        uma camada de mistério à sua personagem. Ela também desempenha um papel crucial nos eventos do
-                        jogo, particularmente na luta contra as forças que controlam a cidade e a busca por justiça.</p>
-
-                    <h3>Vladimir Lem</h3>
-                    <img width=360 height="360"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjOjo-lNLBdJJ0_7oOauRrCvwrO0sxeXKzcw&s">
-                    <p>Vladimir Lem é um personagem do jogo Max Payne 1. Ele é um mafioso russo e um dos antagonistas
-                        que Max Payne enfrenta ao longo da trama. Lem é um dos membros da máfia russa que está envolvido
-                        no tráfico de uma droga sintética chamada Valkyr, que desempenha um papel central na história do
-                        jogo.</p>
-
-                    <p>Ele é um personagem de aparência ameaçadora e com uma personalidade implacável. Lem possui um
-                        vínculo com a trama que envolve a morte da esposa de Max, Michelle, e a subsequente busca de Max
-                        por vingança e justiça. Apesar de ser um dos inimigos de Max, sua presença também ajuda a moldar
-                        o cenário de corrupção e violência que domina a cidade de Nova York no jogo.</p>
-
-                    <p>Sua participação na história é significativa, sendo uma das figuras-chave que Max tem que
-                        confrontar durante sua jornada.</p>
-
-                    <h3>Nicole Horne</h3>
-                    <img width=360 height="360"
-                        src="data:image/jpeg;base64,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">
-                    <p>Nicole Horne é uma das principais vilãs de Max Payne 1, é uma personagem fria e
-                        cruel, que personifica a corrupção e o abuso de poder no
-                        jogo. Ela é a presidente da empresa de
-                        farmacêutica Aesir Corporation, uma corporação poderosa e corrupta envolvida em práticas
-                        ilícitas, como o desenvolvimento e distribuição da droga sintética Valkyr. Ao longo do jogo,
-                        Horne é revelada como uma figura central na trama que envolve a morte da esposa de Max,
-                        Michelle.</p>
-
-                    <p>Horne é uma mulher manipuladora, calculista e ambiciosa, disposta a fazer qualquer coisa para
-                        proteger seus interesses e expandir seu império criminoso. Ela é a principal responsável pelo
-                        caos que Max enfrenta, pois está diretamente envolvida na criação da droga que causou a morte de
-                        várias pessoas, incluindo a esposa de Max. Sua natureza implacável a torna uma adversária
-                        formidável, e sua relação com Max é marcada pela constante perseguição e confronto, até o clímax
-                        da história.</p>
-                </article>
-            </section>
+                <h2 class="lang" data-pt="Personagens" data-en="Characters" data-es="Personajes">
+                    Personagens
+                </h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn" id="prevPersonagem">&#8592;</button>
+                    <div class="carousel-content">
+                        <img id="personagemImg" src="" alt="Personagem" width="360" height="360">
+                        <h3 id="personagemNome" class="lang"></h3>
+                        <p id="personagemTexto" class="lang"></p>
+                    </div>
+                    <button class="carousel-btn" id="nextPersonagem">&#8594;</button>
+                </div>
         </div>
+        </section>
     </main>
     <footer>
-        <div class = "footer" >
-            <div> <h1>2025 Central Max Payne. Todos os direitos reservados</h1></div>
+        <div class="footer">
+            <div>
+                <h1>2025 Central Max Payne. Todos os direitos reservados</h1>
+            </div>
         </div>
     </footer>
-    
+    <button id="backToTop" title="Voltar ao topo">Voltar ao topo</button>
+    <script src="script.js"></script>
 </body>
 
 </html>

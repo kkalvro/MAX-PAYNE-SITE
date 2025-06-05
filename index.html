@@ -9,81 +9,124 @@
 </head>
 
 <body>
+
     <header>
-        <div class = "nav-list" >
-        <div style= "flex-grow: 8" ><a href= "index.html" ><h1>Central Max Payne</h1></a> </div>
-    
-    <nav>
-    
-            <ul>
-                <div class="nav-list">
-                <div> <li><a href="#maxpayne1"><h2><span>Max Payne 1</span></h2></a></li> </div>
-                <div> <li><a href="#maxpayne2"><h2><span>Max Payne 2</span></h2></a></li> </div>
-                <div> <li><a href="#maxpayne3"><h2><span>Max Payne 3</span></h2></a></li></div> 
-                
-            </ul>
-         </div>
-    </nav>
+        <div class="nav-list">
+            <a href="index.html">
+                <h1>Central Max Payne</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#maxpayne1">
+                            <h2>Max Payne 1</h2>
+                        </a></li>
+                    <li><a href="#maxpayne2">
+                            <h2>Max Payne 2</h2>
+                        </a></li>
+                    <li><a href="#maxpayne3">
+                            <h2>Max Payne 3</h2>
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="lang-switch">
+            <button onclick="setLanguage('pt')">PT</button>
+            <button onclick="setLanguage('en')">EN</button>
+            <button onclick="setLanguage('es')">ES</button>
+            <button id="themeToggle" onclick="toggleTheme()">🌙/☀️</button>
+        </div>
+
+
     </header>
     <main>
         <section id="maxpayne1">
             <article>
-                <a href = "maxpayne1.html" ><h2>Max Payne 1</h2></a>
-                <div class="maxpayne1" >
-                <div><a href="maxpayne1.html"> <img width="520" height="700"
-                        src="https://m.media-amazon.com/images/M/MV5BMzIzYmRkOGEtNjA5MS00ZDJmLWJlYzgtOGEwNzAzMDU3MTNlXkEyXkFqcGc@._V1_.jpg">
-                </a> </div>
-               
-               <div> <p>Max Payne 1 (2001). Desenvolvido pela Remedy Entertainment e produzido pela 3D Realms, Max Payne é um
-                    jogo com uma história incansável sobre um homem em seu limite, lutando por justiça contra bandidos
-                    pela cidade de Nova Iorque durante a pior nevasca do século. Max Payne é um original jogo em
-                    terceira pessoa em 3D baseado na engine MAX-FX e usa texturas foto-digitalizadas e iluminação de
-                    radiosidade, resultando em um dos jogos mais realistas já vistos para PC.
-                </p> </div>
+                <a href="maxpayne1.html">
+                    <h2>Max Payne 1</h2>
+                </a>
+                <div class="maxpayne1">
+                    <div><a href="maxpayne1.html"> <img width="520" height="700"
+                                src="https://m.media-amazon.com/images/M/MV5BMzIzYmRkOGEtNjA5MS00ZDJmLWJlYzgtOGEwNzAzMDU3MTNlXkEyXkFqcGc@._V1_.jpg">
+                        </a> </div>
+
+                    <div>
+                        <p class="lang"
+                            data-pt="Max Payne 1 (2001). Desenvolvido pela Remedy Entertainment e produzido pela 3D Realms, Max Payne é um jogo com uma história incansável sobre um homem em seu limite, lutando por justiça contra bandidos pela cidade de Nova Iorque durante a pior nevasca do século. Max Payne é um original jogo em terceira pessoa em 3D baseado na engine MAX-FX e usa texturas foto-digitalizadas e iluminação de radiosidade, resultando em um dos jogos mais realistas já vistos para PC."
+                            data-en="Max Payne 1 (2001). Developed by Remedy Entertainment and produced by 3D Realms, Max Payne is a relentless story about a man at his limit, fighting for justice against criminals in New York City during the worst blizzard of the century. Max Payne is an original third-person 3D game based on the MAX-FX engine and uses photo-digitized textures and radiosity lighting, resulting in one of the most realistic games ever seen for PC."
+                            data-es="Max Payne 1 (2001). Desarrollado por Remedy Entertainment y producido por 3D Realms, Max Payne es una historia incansable sobre un hombre al límite, luchando por justicia contra criminales en la ciudad de Nueva York durante la peor nevada del siglo. Max Payne es un juego original en tercera persona en 3D basado en el motor MAX-FX y utiliza texturas fotodigitalizadas e iluminación por radiosidad, resultando en uno de los juegos más realistas jamás vistos para PC.">
+                            Max Payne 1 (2001). Desenvolvido pela Remedy Entertainment e produzido pela 3D Realms, Max
+                            Payne é um jogo com uma história incansável sobre um homem em seu limite, lutando por
+                            justiça contra bandidos pela cidade de Nova Iorque durante a pior nevasca do século. Max
+                            Payne é um original jogo em terceira pessoa em 3D baseado na engine MAX-FX e usa texturas
+                            foto-digitalizadas e iluminação de radiosidade, resultando em um dos jogos mais realistas já
+                            vistos para PC.
+                        </p>
+                    </div>
                 </div>
             </article>
         </section>
 
         <section id="maxpayne2">
             <article>
-                <a href = "maxpayne2.html" ><h2>Max Payne 2</h2></a>
-                <div class = "maxpayne2" >
-                <div> <a href="maxpayne2.html"> <img width="520" height="700"
-                        src="https://m.media-amazon.com/images/I/717p8kp+NSL.jpg">
-                </a></div>
-                <div><p>Max Payne 2 - The Fall of Max Payne (2003) é um jogo de ação em terceira pessoa focado nos
-                    tiroteios intensos e apresentado através de uma trama bastante interessante no melhor estilo
-                    film noir. Entre as cenas de ação o enredo é contado através de imagens estáticas de quadrinhos,
-                    enquanto durante o jogo propriamente dito, a experiência é cinematográfica.
-                </p></div>
+                <a href="maxpayne2.html">
+                    <h2>Max Payne 2</h2>
+                </a>
+                <div class="maxpayne2">
+                    <div> <a href="maxpayne2.html"> <img width="520" height="700"
+                                src="https://m.media-amazon.com/images/I/717p8kp+NSL.jpg">
+                        </a></div>
+                    <div>
+                        <p class="lang"
+                            data-pt="Max Payne 2 - The Fall of Max Payne (2003) é um jogo de ação em terceira pessoa focado nos tiroteios intensos e apresentado através de uma trama bastante interessante no melhor estilo film noir. Entre as cenas de ação o enredo é contado através de imagens estáticas de quadrinhos, enquanto durante o jogo propriamente dito, a experiência é cinematográfica."
+                            data-en="Max Payne 2 - The Fall of Max Payne (2003) is a third-person action game focused on intense shootouts and presented through a very interesting plot in the best film noir style. Between the action scenes, the story is told through static comic book images, while during the actual gameplay, the experience is cinematic."
+                            data-es="Max Payne 2 - The Fall of Max Payne (2003) es un juego de acción en tercera persona centrado en intensos tiroteos y presentado a través de una trama muy interesante al mejor estilo cine negro. Entre las escenas de acción, la historia se cuenta mediante imágenes estáticas de cómics, mientras que durante el juego propiamente dicho, la experiencia es cinematográfica.">
+                            Max Payne 2 - The Fall of Max Payne (2003) é um jogo de ação em terceira pessoa focado nos
+                            tiroteios intensos e apresentado através de uma trama bastante interessante no melhor estilo
+                            film noir. Entre as cenas de ação o enredo é contado através de imagens estáticas de
+                            quadrinhos, enquanto durante o jogo propriamente dito, a experiência é cinematográfica.
+                        </p>
+                    </div>
             </article>
         </section>
 
         <section id="maxpayne3">
             <article>
-                
-                <a href = "maxpayne3.html" ><h2>Max Payne 3</h2></a>
 
-                <div class = "maxpayne3" >
-                <div><a href="maxpayne3.html"> <img width="520" height="700"
-                    src="https://m.media-amazon.com/images/I/91EuEP0xd-L.jpg">
-            </a></div>
-                <div><p>Para Max Payne, as tragédias que levaram seus entes queridos anos atrás são feridas que se recusam a
-                    curar. Não mais policial, perto de ser lavado e viciado em analgésicos, Max consegue um emprego em
-                    São Paulo, Brasil, protegendo a família do rico magnata imobiliário Rodrigo Branco, em um esforço
-                    para finalmente escapar de seu passado conturbado. Mas à medida que os acontecimentos saem do seu
-                    controlo, Max Payne encontra-se sozinho nas ruas de uma cidade desconhecida, procurando
-                    desesperadamente a verdade e lutando por uma saída. </p></div>
+                <a href="maxpayne3.html">
+                    <h2>Max Payne 3</h2>
+                </a>
+
+                <div class="maxpayne3">
+                    <div><a href="maxpayne3.html"> <img width="520" height="700"
+                                src="https://m.media-amazon.com/images/I/91EuEP0xd-L.jpg">
+                        </a></div>
+                    <div>
+                        <p class="lang"
+                            data-pt="Para Max Payne, as tragédias que levaram seus entes queridos anos atrás são feridas que se recusam a curar. Não mais policial, perto de ser lavado e viciado em analgésicos, Max consegue um emprego em São Paulo, Brasil, protegendo a família do rico magnata imobiliário Rodrigo Branco, em um esforço para finalmente escapar de seu passado conturbado. Mas à medida que os acontecimentos saem do seu controlo, Max Payne encontra-se sozinho nas ruas de uma cidade desconhecida, procurando desesperadamente a verdade e lutando por uma saída."
+                            data-en="For Max Payne, the tragedies that took his loved ones years ago are wounds that refuse to heal. No longer a cop, close to being washed up and addicted to painkillers, Max gets a job in São Paulo, Brazil, protecting the family of wealthy real estate mogul Rodrigo Branco, in an effort to finally escape his troubled past. But as events spiral out of his control, Max finds himself alone on the streets of an unfamiliar city, desperately searching for the truth and fighting for a way out."
+                            data-es="Para Max Payne, las tragedias que se llevaron a sus seres queridos años atrás son heridas que se niegan a sanar. Ya no es policía, casi acabado y adicto a los analgésicos, Max consigue un trabajo en São Paulo, Brasil, protegiendo a la familia del rico magnate inmobiliario Rodrigo Branco, en un esfuerzo por escapar finalmente de su pasado turbulento. Pero a medida que los acontecimientos se salen de control, Max Payne se encuentra solo en las calles de una ciudad desconocida, buscando desesperadamente la verdad y luchando por una salida.">
+                            Para Max Payne, as tragédias que levaram seus entes queridos anos atrás são feridas que se
+                            recusam a curar. Não mais policial, perto de ser lavado e viciado em analgésicos, Max
+                            consegue um emprego em São Paulo, Brasil, protegendo a família do rico magnata imobiliário
+                            Rodrigo Branco, em um esforço para finalmente escapar de seu passado conturbado. Mas à
+                            medida que os acontecimentos saem do seu controlo, Max Payne encontra-se sozinho nas ruas de
+                            uma cidade desconhecida, procurando desesperadamente a verdade e lutando por uma saída.
+                        </p>
                     </div>
+                </div>
             </article>
         </section>
     </main>
     <footer>
-        <div class = "footer" >
-            <div> <h1>2025 Central Max Payne. Todos os direitos reservados</h1></div>
+        <div class="footer">
+            <div>
+                <h1>2025 Central Max Payne. Todos os direitos reservados</h1>
+            </div>
         </div>
     </footer>
-    
+    <button id="backToTop" title="Voltar ao topo">Voltar ao topo</button>
+    <script src="script.js"></script>
 </body>
 
 </html>
